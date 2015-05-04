@@ -67,9 +67,5 @@ As in the previous exercise, work in pairs, create your own look-alike for the f
 * http://artisansasylum.com/
 * http://brooklynboulders.com/somerville/
 
-### Bonus (Optional Section)
-
-Feeling solid on this stuff? Try looking up media queries - they're essentially `if` statements for CSS - and use one to change how your elements are positioned on the page.
-
 ## Notes
 * Ordinarily, elements expand to hold their containers. However, floated elements are excluded from this, so floating an element may lead to its container's height shrinking down to nothing. Keep this in mind when using floats!
