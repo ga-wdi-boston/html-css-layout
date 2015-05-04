@@ -1,0 +1,17 @@
+div {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #AAAAAA;
+  float: left;
+}
+
+.no-float {
+  float: none;
+}
+
+.cleared {
+  clear: both;
+}
+
