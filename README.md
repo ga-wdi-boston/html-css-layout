@@ -13,9 +13,20 @@ Students should, at the end of the lesson, be able to:
 
 ## Overview
 
-So far, we've mostly talked about using CSS for styling our page - adding colors, fonts, etc. Next, we'll be examining how CSS can be used to control a webpage' layout.
+So far, we've mostly talked about using CSS for styling our page - adding colors, fonts, etc. Next, we'll be examining how CSS can be used to control a webpage' layout. Back in the 90s, layout was accomplished using tables (`<table>`), which had rows (`<tr>`) and row subdivisions (`<td>`). However, this was problematic for several reasons.
 
-### Basic Positioning
+1. Layout was hard-coded into the page - it couldn't adjust easily.
+
+2. As a result of (1), keeping layout consistent between multiple pages was tedious.
+
+3. Nesting tables within tables quickly became a nightmare; how could you tell apart the `<tr>` of one level from the `<td>` of another?
+
+4. It wasn't very semantic - our markup would always say 'table', even though our content was typically not a table.
+
+Using CSS to control our layout addressed all of these issues. What's more, it effectively abstracted away the _layout_ of our page from the _content_ of our page.
+
+## Basic CSS Positioning
+### Dimensions
 
 * In addition to setting an element's `height` and `width`,elements have three other properties that can be used to explicitly control spacing with other elements.:
   1. 'Border' sets a perimeter around an element. In addition to specifying a color and a particular type of border, you can also specify a thickness.
@@ -34,14 +45,16 @@ So far, we've mostly talked about using CSS for styling our page - adding colors
 * Setting `float` to `none` will cause that element not to be floated, but any inline elements it holds will still wrap around any floated elements.
 * To make something fall beneath a set of floated elements, rather then wrapping around it, you can use the `clear` attribute; set clear to `left` to clear a `left` float, `right` to clear a `right` float, or `both` to clear either kind of float.
 
-#### Lab
+#### Lab :: Basic CSS Positioning
 In pairs, create your own look-alikes for the following websites using what you've learned about so far about CSS positioning, including margin, padding, float and clear.
 * http://boston.craigslist.org/
 * http://en.wikipedia.org/wiki/Main_Page
 * http://reddit.com
 Start this process by drawing a box model - a guess as to how the elements on the page are broken out into `<div>`s (or equivalent elments).
 
-## `Position`
+> Ordinarily, elements expand to hold their containers. However, floated elements are excluded from this, so floating an element may lead to its container's height shrinking down to nothing. Keep this in mind when using floats!
+
+## Advanced CSS Positioning
 * All of the rules that you've learn so far are based on one paradigm of positioning, called 'static' positioning. However, it's possible to change this paradigm and employ a different approach for positining elements using the `position` attribute.
 * `relative` positioning allows you to define where an element should go based on where it would go if it was statically positioned. For instance, changing a static element's positioning to the following
   ```
@@ -60,12 +73,10 @@ would shift it to the right by 10 pixels.
 position: fixed;
   left: 130px;
 ```
-#### Lab
+#### Lab :: Advanced CSS Positioning
 As in the previous exercise, work in pairs, create your own look-alike for the following websites; however, this time, try to use all four types of positioning.
-* https://youtube.com
-* https://twitter.com/GA
-* http://artisansasylum.com/
-* http://brooklynboulders.com/somerville/
 
-## Notes
-* Ordinarily, elements expand to hold their containers. However, floated elements are excluded from this, so floating an element may lead to its container's height shrinking down to nothing. Keep this in mind when using floats!
+  * https://youtube.com
+  * https://twitter.com/GA
+  * http://artisansasylum.com/
+  * http://brooklynboulders.com/somerville/
