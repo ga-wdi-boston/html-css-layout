@@ -46,8 +46,8 @@ Using CSS to control our layout addressed all of these issues. What's more, it e
 * To make something fall beneath a set of floated elements, rather then wrapping around it, you can use the `clear` attribute; set clear to `left` to clear a `left` float, `right` to clear a `right` float, or `both` to clear either kind of float.
 
 #### Lab :: Basic CSS Positioning
-In pairs, create your own look-alikes for the following websites using what you've learned about so far about CSS positioning, including margin, padding, float and clear.
-* http://boston.craigslist.org/
+In your squads, create your own look-alikes for the following websites using what you've learned about so far about CSS positioning, including margin, padding, float and clear.
+* http://nytimes.com
 * http://en.wikipedia.org/wiki/Main_Page
 * http://reddit.com
 Start this process by drawing a box model - a guess as to how the elements on the page are broken out into `<div>`s (or equivalent elments).
@@ -62,21 +62,20 @@ Start this process by drawing a box model - a guess as to how the elements on th
     left: 10 px
   ```
 would shift it to the right by 10 pixels.
-*`absolute` positioning allows you to define the position of an element with respect to the element that contains it. Giving an element the following positioning will place it ten pixels to the right and 20 pixels down from the top-left corner of its parent element.
+* `absolute` positioning allows you to define the position of an element with respect to a 'relative-ly' positioned parent element that contains it (or, if no such parent exists, with respect to the body). Giving an element the following positioning will place it ten pixels to the right and 20 pixels down from the top-left corner of its parent element/the body.
   ```
   position: absolute;
     left: 10px;
     top: 20px;
   ```
-*`fixed` positioning defines the position of an element with respect to the *view window*, essentially 'fixing' its position on the screen. Fixed positioning is frequently used in parallax scrolling.
+* `fixed` positioning defines the position of an element with respect to the *view window*, essentially 'fixing' its position on the screen. Fixed positioning is frequently used in parallax scrolling.
 ```
 position: fixed;
   left: 130px;
 ```
 #### Lab :: Advanced CSS Positioning
-As in the previous exercise, work in pairs, create your own look-alike for the following websites; however, this time, try to use all four types of positioning.
+As in the previous exercise, work in your squads to create your own look-alike for the following websites; however, this time, try to use all four types of positioning at least once.
 
   * https://youtube.com
   * https://twitter.com/GA
   * http://artisansasylum.com/
-  * http://brooklynboulders.com/somerville/
