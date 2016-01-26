@@ -44,11 +44,23 @@ Every one of these attributes, including `height` and `width`, can be specified 
 * `em` : ties dimensions to *font size* - one `em` is the width of the letter 'm'. For all dimensions except `font-size`, `em` will refer to the font size of the element; as a value for `font-size`, `em` refers to the font size of the *parent*
 
 ### Float and Clear
-* The problem with block elements is that they always stack vertically, never side by side. This is because each block element has a 'new-line' built into it.
-* This can be circumvented using the `float` property; floated elements pop out of the normal flow of a document and stack up in the upper left or upper right corner of their container, while the rest of the content wraps around them.
-* As more elements get floated, they continue stacking up alongside the first floated element from left to right (if floated left; if floated right, elements stack up from right to left.)
-* Setting `float` to `none` will cause that element not to be floated, but any inline elements it holds will still wrap around any floated elements.
-* To make something fall beneath a set of floated elements, rather then wrapping around it, you can use the `clear` attribute; set clear to `left` to clear a `left` float, `right` to clear a `right` float, or `both` to clear either kind of float.
+Block elements, as a rule, always stack vertically - never side by side. Each block element effectively has a 'new-line' built into it, forcing the next piece of content down.
+
+![Floated Block Elements](images/floated-block-elements-01.jpg)
+
+This can be circumvented using the `float` property; floated elements act like words within a block of text, wrapping around the screen when it is too narrow to display the entire line.
+
+![Floated Block Elements](images/floated-block-elements-02.jpg)
+
+![Floated Block Elements](images/floated-block-elements-03.jpg)
+
+Like words, floated elements can be stacked from left-to-right (_left-floated_) or from right-to-left (_right-floated_)
+
+To make something fall beneath a set of floated elements, rather then wrapping around it, you can use the `clear` attribute; set clear to `left` to clear a `left` float, `right` to clear a `right` float, or `both` to clear either kind of float.
+
+![Clearing a Float](images/floated-block-elements-04.jpg)
+
+> Ordinarily, elements expand to hold their containers. However, floated elements are excluded from this, so floating an element may lead to its container's height shrinking down to nothing. Keep this in mind when using floats!
 
 #### Lab :: Basic CSS Positioning
 In your squads, create your own look-alikes for the following websites using what you've learned about so far about CSS positioning, including margin, padding, float and clear.
