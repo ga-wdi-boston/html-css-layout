@@ -72,6 +72,35 @@ In your squads, create simple look-alikes that mimic the layout (but **not** the
 > Hint: Start by drawing a sketch, and breaking up the content of the page into nested boxes!
 
 ## Advanced CSS Positioning
+### Media Queries
+Using `%` dimensions allows you, to a certain degree, to account for a variety of screen sizes by scaling up linearly. Sometimes, however, you don't want to scale linearly; instead you want size to be fixed sometimes, to scale linearly at others, or even to disappear entirely at a certain size.
+
+Fortunately, CSS has a tool called a **media query** designed for this specific use case.
+
+```css
+@media (max-width: 700px) {
+  div {
+    width: 300px;
+    height: 300px;
+  }
+}
+```
+A media query acts a little like an `if` statement for your CSS; it will _selectively hide or show_ the CSS it contains based on whether or not the condition in the query comes back as `true`.
+
+Here are some properties that can be used to build media queries:
+* min-width : CSS is visible at all screen widths **larger** than the given value.
+* max-width: CSS is visible at all screen widths **smaller** than the given value.
+* min/max-resolution :  CSS is visible above/below a given resolution.
+
+In addition to hiding/showing sections of CSS code, media queries can even be used to selectively load or not load _entire stylesheets_!
+
+```html
+<link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+```
+
+#### Your Turn : Media Queries
+Revisit the basic site from the previous exercise, and add a new effect that triggers when you shrink the screen below 800px wide.
+
 * All of the rules that you've learn so far are based on one paradigm of positioning, called 'static' positioning. However, it's possible to change this paradigm and employ a different approach for positining elements using the `position` attribute.
 * `relative` positioning allows you to define where an element should go based on where it would go if it was statically positioned. For instance, changing a static element's positioning to the following
   ```
