@@ -102,20 +102,9 @@ In addition to hiding/showing sections of CSS code, media queries can even be us
 Revisit the basic site from the previous exercise, and add a new effect that triggers when you shrink the screen below 800px wide.
 
 ### Static vs Fixed Positioning
-* All of the rules that you've learn so far are based on one paradigm of positioning, called 'static' positioning. However, it's possible to change this paradigm and employ a different approach for positining elements using the `position` attribute.
-* `relative` positioning allows you to define where an element should go based on where it would go if it was statically positioned. For instance, changing a static element's positioning to the following
-  ```
-  position: relative;
-    left: 10 px
-  ```
-would shift it to the right by 10 pixels.
-* `absolute` positioning allows you to define the position of an element with respect to a 'relative-ly' positioned parent element that contains it (or, if no such parent exists, with respect to the body). Giving an element the following positioning will place it ten pixels to the right and 20 pixels down from the top-left corner of its parent element/the body.
-  ```
-  position: absolute;
-    left: 10px;
-    top: 20px;
-  ```
-* `fixed` positioning defines the position of an element with respect to the *view window*, essentially 'fixing' its position on the screen. Fixed positioning is frequently used in parallax scrolling.
+All of the rules that you've learn so far are based on one paradigm of positioning, called 'static' positioning. However, it's possible to change this paradigm and employ a different approach for positining elements using the `position` attribute.
+
+Though there are others, the most significant type of positioning besides `static` positioning is `fixed` positioning. `fixed` positioning defines the position of an element with respect to the *view window*, essentially 'fixing' its position on the screen. Fixed positioning is frequently used in parallax scrolling, or for holding a navigation bar at the top/side/bottom of the screen.
 ```
 position: fixed;
   left: 130px;
