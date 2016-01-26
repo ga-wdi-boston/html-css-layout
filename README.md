@@ -9,7 +9,7 @@ Students should, at the end of the lesson, be able to:
 - Establish spacing inside and outside of elements using margin and padding.
 - Explain the difference between different types of distance measurement in a web page, including 'px', '%', and 'em'.
 - Use 'float' and 'clear' to stack elements alongside each other.
-- Explain the difference between 'static', 'relative', 'absolute', and 'fixed' positioning.
+- Explain the difference between 'static' and 'fixed' positioning.
 
 ## Overview
 
