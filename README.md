@@ -101,6 +101,7 @@ In addition to hiding/showing sections of CSS code, media queries can even be us
 #### Your Turn : Media Queries
 Revisit the basic site from the previous exercise, and add a new effect that triggers when you shrink the screen below 800px wide.
 
+### Static vs Fixed Positioning
 * All of the rules that you've learn so far are based on one paradigm of positioning, called 'static' positioning. However, it's possible to change this paradigm and employ a different approach for positining elements using the `position` attribute.
 * `relative` positioning allows you to define where an element should go based on where it would go if it was statically positioned. For instance, changing a static element's positioning to the following
   ```
