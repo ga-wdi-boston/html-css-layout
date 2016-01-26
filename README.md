@@ -62,14 +62,14 @@ To make something fall beneath a set of floated elements, rather then wrapping a
 
 > Ordinarily, elements expand to hold their containers. However, floated elements are excluded from this, so floating an element may lead to its container's height shrinking down to nothing. Keep this in mind when using floats!
 
-#### Lab :: Basic CSS Positioning
-In your squads, create your own look-alikes for the following websites using what you've learned about so far about CSS positioning, including margin, padding, float and clear.
+#### Your Turn : Basic Positioning (Dimensions, Float/Clear)
+In your squads, create simple look-alikes that mimic the layout (but **not** the actual content) of one of the following sites, using what you've learned about so far about CSS positioning (including margin, padding, float and clear).
+
 * http://nytimes.com
 * http://en.wikipedia.org/wiki/Main_Page
 * http://reddit.com
-Start this process by drawing a box model - a guess as to how the elements on the page are broken out into `<div>`s (or equivalent elments).
 
-> Ordinarily, elements expand to hold their containers. However, floated elements are excluded from this, so floating an element may lead to its container's height shrinking down to nothing. Keep this in mind when using floats!
+> Hint: Start by drawing a sketch, and breaking up the content of the page into nested boxes!
 
 ## Advanced CSS Positioning
 * All of the rules that you've learn so far are based on one paradigm of positioning, called 'static' positioning. However, it's possible to change this paradigm and employ a different approach for positining elements using the `position` attribute.
