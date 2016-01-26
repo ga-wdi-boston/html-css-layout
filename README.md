@@ -30,10 +30,13 @@ Using CSS to control our layout addressed all of these issues. What's more, it e
 
 ### Dimensions
 
-* In addition to setting an element's `height` and `width`,elements have three other properties that can be used to explicitly control spacing with other elements.:
-  1. 'Border' sets a perimeter around an element. In addition to specifying a color and a particular type of border, you can also specify a thickness.
-  2. 'Margin' specifies spacing between the outside of an element's border and any adjacent elements.
-  3. 'Padding' specifies spacing between the inside of an element's border and the contents of that element (which includes `height` and `width`!)
+In addition to setting an element's `height` and `width`, elements have three other properties that explicitly control spacing:
+1. 'Border' sets a perimeter around an element. In addition to specifying a color and a particular type of border, you can also specify a thickness.
+2. 'Margin' specifies spacing between the outside of an element's border and any adjacent elements.
+3. 'Padding' specifies spacing between the inside of an element's border and the contents of that element (which includes `height` and `width`!)
+Together, these attributes form _the box model_, a way of describing the space taken up by an element.
+
+![Box Model](https://mdn.mozillademos.org/files/8685/boxmodel-3.png)
 
 * All of these properties, including `height` and `width`, can be specified in the following terms
   * `px` : number of pixels
