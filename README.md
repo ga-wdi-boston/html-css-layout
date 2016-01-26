@@ -38,10 +38,10 @@ Together, these attributes form _the box model_, a way of describing the space t
 
 ![Box Model](https://mdn.mozillademos.org/files/8685/boxmodel-3.png)
 
-* All of these properties, including `height` and `width`, can be specified in the following terms
-  * `px` : number of pixels
-  * `%`  : ties an element's dimensions to the size of the element that contains it ("parent"). As a value of `height`, `%` refers to a fraction of the parent's `height`, but as a value of everything else, `%` refers to a fraction of the parent's `width` value.
-  * `em` : ties dimensions to *font size* - one `em` is the width of the letter 'm'. For all dimensions except `font-size`, `em` will refer to the font size of the element; as a value for `font-size`, `em` refers to the font size of the *parent*
+Every one of these attributes, including `height` and `width`, can be specified in the following terms:
+* `px` : fixed number of pixels
+* `%`  : size is relative to element that contains it ("parent"). As a value of `height`, `%` is relative to the parent's `height`, but for every other dimension, `%` is relative to the parent's `width` value.
+* `em` : ties dimensions to *font size* - one `em` is the width of the letter 'm'. For all dimensions except `font-size`, `em` will refer to the font size of the element; as a value for `font-size`, `em` refers to the font size of the *parent*
 
 ### Float and Clear
 * The problem with block elements is that they always stack vertically, never side by side. This is because each block element has a 'new-line' built into it.
