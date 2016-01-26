@@ -109,8 +109,8 @@ Though there are others, the most significant type of positioning besides `stati
 position: fixed;
   left: 130px;
 ```
-#### Lab :: Advanced CSS Positioning
-As in the previous exercise, work in your squads to create your own look-alike for the following websites; however, this time, try to use all four types of positioning at least once.
+#### Your Turn : Static vs Fixed Positioning
+As in the previous exercise, work in your squads to create your own look-alike for the following websites; however, this time, try to use fixed positioning at least once.
 
   * https://youtube.com
   * https://twitter.com/GA
