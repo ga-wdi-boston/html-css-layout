@@ -12,11 +12,13 @@ Students should, at the end of the lesson, be able to:
 - Employ media queries to change CSS rules based on screen size.
 - Explain the difference between 'static' and 'fixed' positioning.
 
-## Overview
+## Basic CSS Positioning
 
-So far, we've mostly talked about using CSS for styling our page - adding colors, fonts, etc. Next, we'll be examining how CSS can be used to control a webpage' layout. Back in the 90s, layout was accomplished using tables (`<table>`), which had rows (`<tr>`) and row subdivisions (`<td>`). However, this was problematic for several reasons.
+So far, we've mostly talked about using CSS for styling our page - adding colors, fonts, etc. Next, we'll be examining how CSS can be used to control a webpage's layout.
 
-1. Layout was hard-coded into the page - it couldn't adjust easily.
+Back in the 90s, layout was accomplished using tables (`<table>`), which had rows (`<tr>`) and row subdivisions (`<td>`). However, this was problematic for several reasons:
+
+1. Layout was hard-coded into the page - it couldn't easily be adjusted.
 
 2. As a result of (1), keeping layout consistent between multiple pages was tedious.
 
@@ -26,7 +28,6 @@ So far, we've mostly talked about using CSS for styling our page - adding colors
 
 Using CSS to control our layout addressed all of these issues. What's more, it effectively abstracted away the _layout_ of our page from the _content_ of our page.
 
-## Basic CSS Positioning
 ### Dimensions
 
 * In addition to setting an element's `height` and `width`,elements have three other properties that can be used to explicitly control spacing with other elements.:
