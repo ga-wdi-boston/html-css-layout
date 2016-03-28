@@ -1,0 +1,17 @@
+div{
+  height: 100px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 30%;
+}
+
+p {
+  font-family: Helvetica;
+}
+
+.half {
+}
+
+.full{
+}
