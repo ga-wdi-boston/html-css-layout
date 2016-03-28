@@ -19,22 +19,25 @@ So far, we've mostly talked about using CSS for styling our page - adding colors
 Back in the 90s, layout was accomplished using tables (`<table>`), which had rows (`<tr>`) and row subdivisions (`<td>`). However, this was problematic for several reasons:
 
 1. Layout was hard-coded into the page - it couldn't easily be adjusted.
-
 2. As a result of (1), keeping layout consistent between multiple pages was tedious.
-
 3. Nesting tables within tables quickly became a nightmare; how could you tell apart the `<tr>` of one level from the `<td>` of another?
-
 4. It wasn't very semantic - our markup would always say 'table', even though our content was typically not a table.
 
 Using CSS to control our layout addressed all of these issues. What's more, it effectively abstracted away the _layout_ of our page from the _content_ of our page.
 
-### Dimensions
+### Dimensions - Box Model
 
 In addition to setting an element's `height` and `width`, elements have three other properties that explicitly control spacing:
+
 1. 'Border' sets a perimeter around an element. In addition to specifying a color and a particular type of border, you can also specify a thickness.
 2. 'Margin' specifies spacing between the outside of an element's border and any adjacent elements.
 3. 'Padding' specifies spacing between the inside of an element's border and the contents of that element (which includes `height` and `width`!)
+
+
 Together, these attributes form _the box model_, a way of describing the space taken up by an element.
+
+_Note: an element's size is determined by its content's height and width. Border, margin, and padding add to that size._
+_To calculate those into the element's size, the element's CSS [`box-sizing`](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) property should be changed from the default `content-box` to `border-box.`_
 
 ![Box Model](https://mdn.mozillademos.org/files/8685/boxmodel-3.png)
 
@@ -86,6 +89,8 @@ Fortunately, CSS has a tool called a **media query** designed for this specific 
 }
 ```
 A media query acts a little like an `if` statement for your CSS; it will _selectively hide or show_ the CSS it contains based on whether or not the condition in the query comes back as `true`.
+
+Media queries can often be thought of blocks of CSS that override existing styles from your stylesheet (although they can do much more than this). They, therefore, are always placed at the bottom of your stylesheet.
 
 Here are some properties that can be used to build media queries:
 * min-width : CSS is visible at all screen widths **larger** than the given value.
