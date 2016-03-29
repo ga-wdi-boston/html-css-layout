@@ -49,19 +49,19 @@ Every one of these attributes, including `height` and `width`, can be specified 
 ### Float and Clear
 Block elements, as a rule, always stack vertically - never side by side. Each block element effectively has a 'new-line' built into it, forcing the next piece of content down.
 
-![Floated Block Elements](images/floated-block-elements-01.png)
+![Floated Block Elements](assets/images/floated-block-elements-01.png)
 
 This can be circumvented using the `float` property; floated elements act like words within a block of text, wrapping around the screen when it is too narrow to display the entire line.
 
-![Floated Block Elements](images/floated-block-elements-02.png)
+![Floated Block Elements](assets/images/floated-block-elements-02.png)
 
-![Floated Block Elements](images/floated-block-elements-03.png)
+![Floated Block Elements](assets/images/floated-block-elements-03.png)
 
 Like words, floated elements can be stacked from left-to-right (_left-floated_) or from right-to-left (_right-floated_)
 
 To make something fall beneath a set of floated elements, rather then wrapping around it, you can use the `clear` attribute; set clear to `left` to clear a `left` float, `right` to clear a `right` float, or `both` to clear either kind of float.
 
-![Clearing a Float](images/floated-block-elements-04.png)
+![Clearing a Float](assets/images/floated-block-elements-04.png)
 
 > Ordinarily, elements expand to hold their containers. However, floated elements are excluded from this, so floating an element may lead to its container's height shrinking down to nothing. Keep this in mind when using floats!
 
