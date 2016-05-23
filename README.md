@@ -1,6 +1,11 @@
 ![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-# CSS Positioning
+# HTML & CSS Layout
+
+## Instructions
+
+-   Fork and clone this repository
+-   Run `npm install` to install dependencies
 
 ## Objectives
 
@@ -149,8 +154,8 @@ used to selectively load or not load _entire stylesheets_!
 
 #### Your Turn : Media Queries
 
-Revisit the basic site from the previous exercise, and add a new effect that
-triggers when you shrink the screen below 800px wide.
+Revisit the basic site from the previous exercise, and add a new effect
+that triggers when you shrink the screen below 800px wide.
 
 ### Static vs Fixed Positioning
 
