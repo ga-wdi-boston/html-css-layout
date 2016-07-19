@@ -7,7 +7,7 @@
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Create three new branches, `training`, `float-site`, and `lookalike-site`.
-1.  Install dependencies with `npm install`.s
+1.  Install dependencies with `npm install`.
 
 ## Objectives
 
