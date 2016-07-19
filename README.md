@@ -2,10 +2,12 @@
 
 # HTML & CSS Layout
 
-## Instructions
+## Preparation
 
--   Fork and clone this repository
--   Run `npm install` to install dependencies
+1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+    this repository.
+1.  Create three new branches, `training`, `float-site`, and `lookalike-site`.
+1.  Install dependencies with `npm install`.s
 
 ## Objectives
 
@@ -18,7 +20,7 @@ page, including 'px', '%', and 'em'.
 -   Employ media queries to change CSS rules based on screen size.
 -   Explain the difference between 'static' and 'fixed' positioning.
 
-### Basic CSS Positioning
+## Basic CSS Positioning
 
 So far, we've mostly talked about using CSS for styling our page - adding colors, fonts, etc. Next, we'll be examining how CSS can be used to control a webpage's layout.
 
@@ -36,7 +38,7 @@ Using CSS to control our layout addressed all of these issues. What's more, it
 effectively abstracted away the _layout_ of our page from the _content_ of our
 page.
 
-#### Dimensions - Box Model
+### Dimensions: Box Model
 
 In addition to setting an element's `height` and `width`, elements have three
 other properties that explicitly control spacing:
@@ -67,7 +69,7 @@ For all dimensions except `font-size`, `em` will refer to the font size of the
 element; as a value for `font-size`, `em` refers to the font size of the
 *parent*
 
-#### Float and Clear
+### Float and Clear
 
 Block elements, as a rule, always stack vertically - never side by side. Each
 block element effectively has a 'new-line' built into it, forcing the next piece
@@ -91,6 +93,11 @@ around it, you can use the `clear` attribute; set clear to `left` to clear a
 `left` float, `right` to clear a `right` float, or `both` to clear either kind
 of float.
 
+### Code Along: Float Demonstration
+
+Working on our `training` branch, let's use the example HTML code to
+demonstrate floating.
+
 ![Clearing a Float](assets/images/floated-block-elements-04.png)
 
 > Ordinarily, elements expand to hold their containers. However, floated
@@ -98,22 +105,21 @@ of float.
 > container's height shrinking down to nothing. To fix this, we use a "cleafix
 > hack" by applying `overflow: hidden;` to the container's style declarations.
 
-#### Your Turn : Basic Positioning (Dimensions, Float/Clear)
+### Lab: Basic Positioning (Dimensions, Float/Clear)
 
-In your squads, create simple look-alikes that mimic the layout (but **not** the
-actual content) of one of the following sites, using what you've learned about
-so far about CSS positioning (including margin, padding, float and clear).
+Working with your squads on the `float-site` branch, use
+ [index.html](index.html) to create simple look-alikes that mimic the layout
+(but **not** the actual content) of one of the following sites, using what
+ you've learned about so far about CSS positioning (including margin, padding,
+float and clear).
 
 -   [Boston Globe](http://bostonglobe.com)
 -   [Wikipedia](http://en.wikipedia.org/wiki/Main_Page)
 -   [Reddit](http://reddit.com)
 
-> Hint: Start by drawing a sketch, and breaking up the content of the page into
-nested boxes!
+## Advanced CSS Positioning
 
-### Advanced CSS Positioning
-
-#### Media Queries
+## Media Queries
 Using `%` dimensions allows you, to a certain degree, to account for a variety
 of screen sizes by scaling up linearly. Sometimes, however, you don't want to
 scale linearly; instead you want size to be fixed sometimes, to scale linearly
@@ -143,14 +149,14 @@ Here are some properties that can be used to build media queries:
 
 -   min-width : CSS is visible at all screen widths **larger** than the given value.
 -   max-width: CSS is visible at all screen widths **smaller** than the given value.
--   min/max-resolution :  CSS is visible above/below a given resolution.
+-   min/max-resolution :  CSS is visible above/below a given resolution.gi
 
-#### Your Turn : Media Queries
+### Lab: Media Queries
 
-Revisit the basic site from the previous exercise, and add a new effect
-that triggers when you shrink the screen below 800px wide.
+Revisit the basic site from the previous `float-site` branch exercise, and add
+a new effect that triggers when you shrink the screen below 800px wide.
 
-### Static vs Fixed Positioning
+## Static vs Fixed Positioning
 
 All of the rules that you've learn so far are based on one paradigm of
 positioning, called 'static' positioning. However, it's possible to change this
@@ -159,7 +165,7 @@ paradigm and employ a different approach for positining elements using the
 
 Though there are others, the most significant type of positioning besides
 `static` positioning is `fixed` positioning. `fixed` positioning defines the
-position of an element with respect to the *view window*, essentially 'fixing'
+position of an element with respect to the _view window_, essentially 'fixing'
 its position on the screen. Fixed positioning is frequently used in parallax
 scrolling, or for holding a navigation bar at the top/side/bottom of the screen.
 
@@ -170,12 +176,23 @@ position: fixed;
 }
 ```
 
-#### Your Turn : Static vs Fixed Positioning
+### Lab: Static vs Fixed Positioning
 
-As in the previous exercise, work in your squads to create your own look-alike
-for the following websites; however, this time, try to use fixed positioning at
-least once.
+Switch to the `lookalike-site` branch and work in your squads to create your own
+ look-alike for the following websites. Try to use fixed positioning at least
+once.
 
 -   [You Tube](https://youtube.com)
 -   [Twitter](https://twitter.com/GA)
 -   [Artisan Asylum](http://artisansasylum.com/)
+
+### Further Practice: Relative and Absolute Positioning
+
+[Research](https://developer.mozilla.org/en-US/docs/Web/CSS/position) relative
+ and absolute positioning in CSS. How are they used? A helpful reference for
+understanding is [this CSS-tricks blog post](https://css-tricks.com/absolute-positioning-inside-relative-positioning/).
+
+## [License](LICENSE)
+
+Source code distributed under the MIT license. Text and other assets copyright
+General Assembly, Inc., all rights reserved.
