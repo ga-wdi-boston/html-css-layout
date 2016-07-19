@@ -94,9 +94,9 @@ of float.
 ![Clearing a Float](assets/images/floated-block-elements-04.png)
 
 > Ordinarily, elements expand to hold their containers. However, floated
-elements are excluded from this, so floating an element may lead to its
-container's height shrinking down to nothing. Keep this in mind when using
-floats!
+> elements are excluded from this, so floating an element may lead to its
+> container's height shrinking down to nothing. To fix this, we use a "cleafix
+> hack" by applying `overflow: hidden;` to the container's style declarations.
 
 #### Your Turn : Basic Positioning (Dimensions, Float/Clear)
 
