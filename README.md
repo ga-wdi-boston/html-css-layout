@@ -145,13 +145,6 @@ Here are some properties that can be used to build media queries:
 -   max-width: CSS is visible at all screen widths **smaller** than the given value.
 -   min/max-resolution :  CSS is visible above/below a given resolution.
 
-In addition to hiding/showing sections of CSS code, media queries can even be
-used to selectively load or not load _entire stylesheets_!
-
-```html
-<link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
-```
-
 #### Your Turn : Media Queries
 
 Revisit the basic site from the previous exercise, and add a new effect
