@@ -22,15 +22,19 @@ page, including 'px', '%', and 'em'.
 
 ## Basic CSS Positioning
 
-So far, we've mostly talked about using CSS for styling our page - adding colors, fonts, etc. Next, we'll be examining how CSS can be used to control a webpage's layout.
+So far, we've mostly talked about using CSS for styling our page - adding
+colors, fonts, etc. Next, we'll be examining how CSS can be used to control a
+webpage's layout.
 
-Back in the 90s, layout was accomplished using tables (`<table>`), which had rows (`<tr>`) and row subdivisions (`<td>`). However, this was problematic for several reasons:
+Back in the 90s, layout was accomplished using tables (`<table>`), which had
+rows (`<tr>`) and row subdivisions (`<td>`). However, this was problematic for
+several reasons:
 
 1.  Layout was hard-coded into the page - it couldn't easily be adjusted.
 2.  As a result of (1), keeping layout consistent between multiple pages was
 tedious.
 3.  Nesting tables within tables quickly became a nightmare; how could you tell
- apart the `<tr>` of one level from the `<td>` of another?
+apart the `<tr>` of one level from the `<td>` of another?
 4.  It wasn't very semantic - our markup would always say 'table', even though our
 content was typically not a table.
 
@@ -55,11 +59,11 @@ taken up by an element.
 
 _Note: an element's size is determined by its content's height and width.Border, margin, and padding add to that size._
 _To calculate those into the element's size, the element's CSS [`box-sizing`](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) property should be changed from the default `content-box` to `border-box.`_
-
 ![Box Model](https://mdn.mozillademos.org/files/8685/boxmodel-3.png)
 
 Every one of these attributes, including `height` and `width`, can be specified
 in the following terms:
+
 -   `px` : fixed number of pixels
 -   `%`  : size is relative to element that contains it ("parent"). As a value of
 `height`, `%` is relative to the parent's `height`, but for every other
@@ -119,7 +123,8 @@ float and clear).
 
 ## Advanced CSS Positioning
 
-## Media Queries
+### Media Queries
+
 Using `%` dimensions allows you, to a certain degree, to account for a variety
 of screen sizes by scaling up linearly. Sometimes, however, you don't want to
 scale linearly; instead you want size to be fixed sometimes, to scale linearly
@@ -171,7 +176,7 @@ scrolling, or for holding a navigation bar at the top/side/bottom of the screen.
 
 ```css
 .bar {
-position: fixed;
+  position: fixed;
   left: 130px;
 }
 ```
