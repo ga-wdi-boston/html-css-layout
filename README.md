@@ -13,6 +13,7 @@
 
 Students should, at the end of the lesson, be able to:
 
+-   Explain the box model of element spacing
 -   Establish spacing inside and outside of elements using margin and padding.
 -   Explain the difference between different types of distance measurement in a web
 page, including 'px', '%', and 'em'.
