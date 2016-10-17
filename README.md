@@ -122,6 +122,14 @@ float and clear).
 -   [Wikipedia](http://en.wikipedia.org/wiki/Main_Page)
 -   [Reddit](http://reddit.com)
 
+#### Hints
+
+1. Don't be afraid to 'cheat' by looking at the source code of the site you're mimicking.
+2. Keep your sketches simple - don't add details like text, colors, etc.
+3. When drawing boxes, try not to draw them flush against each other - adding a little bit of space helps to make it clear when boxes should be nested inside other boxes.
+4. Don't got more than 4 levels deep in your nesting.
+5. Bright colors for your divs help to make layout mistakes obvious.
+
 ## Advanced CSS Positioning
 
 ### Media Queries
