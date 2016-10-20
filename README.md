@@ -13,6 +13,7 @@
 
 Students should, at the end of the lesson, be able to:
 
+-   Explain the box model of element spacing
 -   Establish spacing inside and outside of elements using margin and padding.
 -   Explain the difference between different types of distance measurement in a web
 page, including 'px', '%', and 'em'.
@@ -121,6 +122,14 @@ float and clear).
 -   [Wikipedia](http://en.wikipedia.org/wiki/Main_Page)
 -   [Reddit](http://reddit.com)
 
+#### Hints
+
+1. Don't be afraid to 'cheat' by looking at the source code of the site you're mimicking.
+2. Keep your sketches simple - don't add details like text, colors, etc.
+3. When drawing boxes, try not to draw them flush against each other - adding a little bit of space helps to make it clear when boxes should be nested inside other boxes.
+4. Don't got more than 4 levels deep in your nesting.
+5. Bright colors for your divs help to make layout mistakes obvious.
+
 ## Advanced CSS Positioning
 
 ### Media Queries
@@ -199,5 +208,5 @@ understanding is [this CSS-tricks blog post](https://css-tricks.com/absolute-pos
 
 ## [License](LICENSE)
 
-Source code distributed under the MIT license. Text and other assets copyright
-General Assembly, Inc., all rights reserved.
+1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
+1.  All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
