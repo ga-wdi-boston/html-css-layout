@@ -5,12 +5,21 @@ let clone = require('clone');
 // clone the webpack config to separate configuration of webpack and dev server
 let webpackConfig = clone(require('./webpack').options);
 
-// enable live reload without a script tag
-webpackConfig.entry.vendor.unshift('webpack-dev-server/client?http://localhost:8080');
+// port for development server
+const port = +('GA'.split('').reduce((p, c)=> p + c.charCodeAt(), ''));
+
+// make `jQuery` and `$` available in the development console
+webpackConfig.module.loaders.push({
+  test: require.resolve('jquery'),
+  loader: 'expose?jQuery!expose?$',
+});
 
 module.exports = {
   options: {
+    port,
+    inline: true, // reload on change
     webpack: webpackConfig,
+    publicPath: '/public/',
   },
 
   start: {
