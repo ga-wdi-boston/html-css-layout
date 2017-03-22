@@ -58,7 +58,7 @@ contents of that element (which includes `height` and `width`!)
 Together, these attributes form _the box model_, a way of describing the space
 taken up by an element.
 
-_Note: an element's size is determined by its content's height and width.Border, margin, and padding add to that size._
+_Note: The Box Model explains how CSS `width` is Calculated. By default, how wide an element is on the page is a combination of `width` + `padding` + `border` and the rendered `height` = `height` + `padding` + `border`. This can be problematic when trying to create a layout or position things logically on the page._
 _To calculate those into the element's size, the element's CSS [`box-sizing`](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) property should be changed from the default `content-box` to `border-box.`_
 ![Box Model](https://mdn.mozillademos.org/files/8685/boxmodel-3.png)
 
