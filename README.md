@@ -21,7 +21,7 @@ page, including 'px', '%', and 'em'.
 -   Employ media queries to change CSS rules based on screen size.
 -   Explain the difference between 'static' and 'fixed' positioning.
 
-## Basic CSS Positioning
+## Historic CSS Layout
 
 So far, we've mostly talked about using CSS for styling our page - adding
 colors, fonts, etc. Next, we'll be examining how CSS can be used to control a
@@ -43,7 +43,7 @@ Using CSS to control our layout addressed all of these issues. What's more, it
 effectively abstracted away the _layout_ of our page from the _content_ of our
 page.
 
-### Dimensions: Box Model
+## Box Model
 
 In addition to setting an element's `height` and `width`, elements have three
 other properties that explicitly control spacing:
@@ -74,7 +74,7 @@ For all dimensions except `font-size`, `em` will refer to the font size of the
 element; as a value for `font-size`, `em` refers to the font size of the
 *parent*
 
-### Float and Clear
+## Float and Clear
 
 Block elements, as a rule, always stack vertically - never side by side. Each
 block element effectively has a 'new-line' built into it, forcing the next piece
@@ -110,7 +110,7 @@ demonstrate floating.
 > container's height shrinking down to nothing. To fix this, we use a "cleafix
 > hack" by applying `overflow: hidden;` to the container's style declarations.
 
-### Lab: Basic Positioning (Dimensions, Float/Clear)
+### Lab: Box Model, Float/Clear
 
 Working with your squads on the `float-site` branch, use
  [index.html](index.html) to create simple look-alikes that mimic the layout
@@ -130,9 +130,7 @@ float and clear).
 4. Don't got more than 4 levels deep in your nesting.
 5. Bright colors for your divs help to make layout mistakes obvious.
 
-## Advanced CSS Positioning
-
-### Media Queries
+## Media Queries
 
 Using `%` dimensions allows you, to a certain degree, to account for a variety
 of screen sizes by scaling up linearly. Sometimes, however, you don't want to
@@ -200,7 +198,7 @@ once.
 -   [Twitter](https://twitter.com/GA)
 -   [Artisan Asylum](http://artisansasylum.com/)
 
-### Further Practice: Relative and Absolute Positioning
+## Further Practice: Relative and Absolute Positioning
 
 [Research](https://developer.mozilla.org/en-US/docs/Web/CSS/position) relative
  and absolute positioning in CSS. How are they used? A helpful reference for
