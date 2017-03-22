@@ -11,9 +11,9 @@
 
 ## Objectives
 
-Students should, at the end of the lesson, be able to:
+Developers should, at the end of the lesson, be able to:
 
--   Explain the box model of element spacing
+-   Explain the box model of element spacing.
 -   Establish spacing inside and outside of elements using margin and padding.
 -   Explain the difference between different types of distance measurement in a web
 page, including 'px', '%', and 'em'.
@@ -24,7 +24,7 @@ page, including 'px', '%', and 'em'.
 ## Historic CSS Layout
 
 So far, we've mostly talked about using CSS for styling our page - adding
-colors, fonts, etc. Next, we'll be examining how CSS can be used to control a
+colors, fonts, etc. In this talk, we'll be examining how CSS can be used to control a
 webpage's layout.
 
 Back in the 90s, layout was accomplished using tables (`<table>`), which had
@@ -34,7 +34,7 @@ several reasons:
 1.  Layout was hard-coded into the page - it couldn't easily be adjusted.
 2.  As a result of (1), keeping layout consistent between multiple pages was
 tedious.
-3.  Nesting tables within tables quickly became a nightmare; how could you tell
+3.  Nesting tables within tables quickly became a nightmare - how could you tell
 apart the `<tr>` of one level from the `<td>` of another?
 4.  It wasn't very semantic - our markup would always say 'table', even though our
 content was typically not a table.
@@ -59,20 +59,21 @@ Together, these attributes form _the box model_, a way of describing the space
 taken up by an element.
 
 _Note: The Box Model explains how CSS `width` is Calculated. By default, how wide an element is on the page is a combination of `width` + `padding` + `border` and the rendered `height` = `height` + `padding` + `border`. This can be problematic when trying to create a layout or position things logically on the page._
-_To calculate those into the element's size, the element's CSS [`box-sizing`](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) property should be changed from the default `content-box` to `border-box.`_
+_To calculate border, margin, and padding into the element's size, the element's CSS [`box-sizing`](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) property should be changed from the default `content-box` to `border-box.`_
+
 ![Box Model](https://mdn.mozillademos.org/files/8685/boxmodel-3.png)
 
 Every one of these attributes, including `height` and `width`, can be specified
 in the following terms:
 
--   `px` : fixed number of pixels
+-   `px` : fixed number of pixels.
 -   `%`  : size is relative to element that contains it ("parent"). As a value of
 `height`, `%` is relative to the parent's `height`, but for every other
 dimension, `%` is relative to the parent's `width` value.
 -   `em` : ties dimensions to *font size* - one `em` is the width of the letter 'm'.
 For all dimensions except `font-size`, `em` will refer to the font size of the
 element; as a value for `font-size`, `em` refers to the font size of the
-*parent*
+*parent*.
 
 ## Float and Clear
 
@@ -107,7 +108,7 @@ demonstrate floating.
 
 > Ordinarily, elements expand to hold their containers. However, floated
 > elements are excluded from this, so floating an element may lead to its
-> container's height shrinking down to nothing. To fix this, we use a "cleafix
+> container's height shrinking down to nothing. To fix this, we use a "clearfix
 > hack" by applying `overflow: hidden;` to the container's style declarations.
 
 ### Lab: Box Model, Float/Clear
@@ -153,15 +154,15 @@ A media query acts a little like an `if` statement for your CSS; it will
 _selectively hide or show_ the CSS it contains based on whether or not the
 condition in the query comes back as `true`.
 
-Media queries can often be thought of blocks of CSS that override existing
+Media queries can often be thought of as blocks of CSS that override existing
 styles from your stylesheet (although they can do much more than this). They,
 therefore, are always placed at the bottom of your stylesheet.
 
 Here are some properties that can be used to build media queries:
 
--   min-width : CSS is visible at all screen widths **larger** than the given value.
+-   min-width: CSS is visible at all screen widths **larger** than the given value.
 -   max-width: CSS is visible at all screen widths **smaller** than the given value.
--   min/max-resolution :  CSS is visible above/below a given resolution.gi
+-   min/max-resolution: CSS is visible above/below a given resolution.
 
 ### Lab: Media Queries
 
